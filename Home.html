@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanusan Marimuthu - Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Navbar with hamburger and profile icon -->
+    <header>
+        <div class="navbar">
+            <div class="icon">
+                <img src="icon.jpeg" alt="Dhanusan Icon">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Hi, I'm Dhanusan</h1>
+        <p>A passionate software developer building projects with modern technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Builds</h2>
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-logo">
+                    <img src="logo1.png" alt="Logo" />
+                </div>
+                <div class="project-info">
+                    <h3>Cyber Deck</h3>
+                    <p>Inventory Management System For Computer Store.</p>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="todo-app.png" alt="To-Do App Screenshot" />
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-logo">
+                    <img src="logo2.png" alt="Logo" />
+                </div>
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>A description of another project. Built with React, Node.js.</p>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="project2.png" alt="Project 2 Screenshot" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Flutter</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dhanusan Marimuthu. All rights reserved.</p>
+        <ul class="social-icons">
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+            <li><a href="https://github.com">GitHub</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
