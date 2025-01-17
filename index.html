@@ -5,112 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhanusan Marimuthu - Portfolio</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">DM</a>
+            
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
 
-    <!-- Navbar with hamburger and profile icon -->
-    <header>
-        <div class="navbar">
-            <div class="icon">
-                <img src="icon.jpeg" alt="Dhanusan Icon">
-            </div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        <div class="menu">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </header>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h1>Hi, I'm Dhanusan</h1>
-        <p>A passionate software developer building projects with modern technologies.</p>
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Howdy, I'm <span class="accent">Dhanusan</span></h1>
+            <p>A passionate software developer crafting exceptional digital experiences with modern technologies.</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Builds</h2>
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-logo">
-                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/laying-bricks.png" alt="laying-bricks"/>                </div>
-                <div class="project-info">
-                    <h3>Cyber Deck</h3>
-                    <p>Inventory Management System For Computer Store.</p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="card project-card">
+                    <div class="project-image">
+                        <img src="img/Cyber Deck1.png" alt="Cyber Deck Preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>Cyber Deck</h3>
+                        <p>Inventory Management System for Computer Store</p>
+                        <a href="https://cyber-deck-5gus.vercel.app/" target="_blank" rel="noopener noreferrer" class="button">View Project</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project-image">
-                <img src="apptodo.jpg" alt="To-Do App Screenshot" />
-                <img src="apptodo.jpg" alt="To-Do App Screenshot" />
-                <img src="apptodo.jpg" alt="To-Do App Screenshot" />
-                <img src="apptodo.jpg" alt="To-Do App Screenshot" />
+                
+                <div class="card project-card">
+                    <div class="project-image">
+                        <img src="img/SR1.png" alt="Shell Resort Preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>Shell Resort</h3>
+                        <p>Front End For Shell Resort - ArugamBay with Booking.lk Integrated</p>
+                        <a href="https://shell-resort.vercel.app/" target="_blank" rel="noopener noreferrer" class="button">View Project</a>
+                    </div>
+                </div>
 
-            </div>
-        </div>
-    
-        <div class="project-card">
-            <div class="project-content">
-                <div class="project-logo">
-                    <img src="logo2.png" alt="Logo" />
+                <div class="card project-card">
+                    <div class="project-image">
+                        <img src="img/TypeRR.png" alt="Shell Resort Preview">
+                    </div>
+                    <div class="project-content">
+                        <h3>TypeRR</h3>
+                        <p>Test your typing speed on Typerr and see how you stack up!</p>
+                        <a href="https://typerr-brown.vercel.app/" target="_blank" rel="noopener noreferrer" class="button">View Project</a>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>Project 2</h3>
-                    <p>A description of another project. Built with React, Node.js.</p>
-                </div>
-            </div>
-            <div class="project-image">
-                <img src="project2.png" alt="Project 2 Screenshot" />
+
             </div>
         </div>
     </section>
 
+    
+
+    
+
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Flutter</li>
-        </ul>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="card skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>PHP, Node.js</p>
+                </div>
+                <div class="card skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile</h3>
+                    <p>Android Native, Flutter</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="card contact-card">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Dhanusan Marimuthu. All rights reserved.</p>
-        <ul class="social-icons">
-            <li><a href="https://linkedin.com">LinkedIn</a></li>
-            <li><a href="https://github.com">GitHub</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Dhanusan Marimuthu. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Dhanush002" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dhanusan/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:dhanushrm002@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            document.querySelector('.menu').classList.toggle('show');
-        }
-    </script>
-        <script src="smooth.js"></script>
+    <div class="toast" id="toast"></div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
